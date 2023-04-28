@@ -42,29 +42,3 @@ const CollapsibleText = ({ title, text, children }: CollapsibleTextProps) => {
 };
 
 export default CollapsibleText;
-
-// const replaceWithLink = (paragraph: string) => {
-//   if (paragraph.includes('Join our waitlist')) {
-//     const beforeLink = paragraph.split('Join our waitlist')[0];
-//     const afterLink = paragraph.split('Join our waitlist')[1];
-//     const link = (
-//       <Link href="https://tally.so/r/mJqjgd">
-//         <span>OneBrain AI</span>
-//       </Link>
-//     );
-//     return beforeLink + ReactDOMServer.renderToString(link) + afterLink;
-//   }
-//   else if (paragraph.includes('hello@onebrain.io.')) {
-//     const beforeLink = paragraph.split('hello@onebrain.io.')[0];
-//     const afterLink = paragraph.split('hello@onebrain.io.')[1];
-//     const link = (
-//       <Link href="mailto:hello@onebrain.io">
-//         <span>hello@onebrain.io</span>
-//       </Link>
-//     );
-//     return beforeLink + ReactDOMServer.renderToString(link) + afterLink;
-//   }
-//   else {
-//     return paragraph;
-//   }
-// };

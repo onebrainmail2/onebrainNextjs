@@ -1,9 +1,6 @@
 import React from "react";
 
-interface Props {
-}
-
-const BrainLogo: React.FC<Props> = () => {
+const BrainLogo = () => {
   return (
     <div className="col-lg-4 col-sm-12 col-xs-12 brain-logo-lg">
       <img src="brain-itself.gif" className="mx-auto d-block" alt="" />

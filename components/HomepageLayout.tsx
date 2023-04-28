@@ -18,10 +18,12 @@ const HomepageLayout: React.FC<HomepageLayoutProps> = ({ headTitle, children }) 
   
   const router = useRouter();
   const faqLinkClass = router.pathname === '/faq' ? 'd-inline wrapper text-white' : 'd-inline wrapper text-dark'; 
+  const usecasesLinkClass = router.pathname === '/usecases' ? 'd-inline wrapper text-white' : 'd-inline wrapper text-dark'; 
   const logoClass = classnames(styles['brain-logo-sm'], 'd-inline');
 
   return (
     <React.Fragment>
+            
       <Head>
         <title>{headTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,6 +53,13 @@ const HomepageLayout: React.FC<HomepageLayoutProps> = ({ headTitle, children }) 
               <span>
                 <div className="d-inline faq-link align-middle">
                   <div className={faqLinkClass}>FAQ</div>
+                </div>
+              </span>
+              </Link>
+              <Link href="/usecases">
+              <span>
+                <div className="d-inline faq-link align-middle">
+                  <div className={usecasesLinkClass}>Use Cases</div>
                 </div>
               </span>
               </Link>
