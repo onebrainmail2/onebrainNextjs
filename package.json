@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export"
   },
   "keywords": [],
   "author": "",
@@ -23,9 +24,15 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "classnames": "^2.3.2",
     "react-tsparticles": "^2.9.3",
     "react-youtube": "^10.1.0",
+    "reactstrap": "^9.1.9",
     "tsparticles": "^2.9.3"
   }
 }
