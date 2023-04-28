@@ -142,4 +142,40 @@ hr {
     border: 0;
     border-top: 1px solid #eee;
 }
+
+.invert-1{
+    filter: invert(1);
+}
+
+.tooltip{
+    color:aqua;
+    
+}
+
+/* Change background color of tooltip */
+.tooltip-inner {
+    filter:invert(1);
+    background-color: black;
+    padding:10px;
+  }
+  
+  /* Change font size of tooltip */
+  .tooltip-inner {
+    filter:invert(1);
+    font-size: 14px;
+  }
+  
+  /* Change border color of tooltip */
+  .tooltip-inner {
+    filter:invert(1);
+    border-color: white;
+  }
+
+  /* Add a transition to the tooltip */
+  .tooltip.fade {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+
+
 /* END Bootstrap */
